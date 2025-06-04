@@ -4,15 +4,15 @@
 
 @layer base {
 	:root {
-		--background: 48, 8%, 88%; /* CHANGED */
+		--background: 222.2, 49.2%, 11.1%; /* CHANGED */
 		--foreground: 222.2 84% 4.9%;
 
 		/* CLASSES ADDED BY US */
 		--container: 0 0 100%;
 		--left-panel: 203, 32%, 10%;
 
-		--gray-primary: 216, 20%, 95%;
-		--gray-secondary: 216, 20%, 95%;
+		--blue-primary: 226, 100%, 5.8%;
+		--blue-secondary: 226, 25.6%, 8.7%;
 
 		--left-panel: 100, 100%, 100%;
 		--chat-hover: 180, 5%, 96%;
@@ -50,23 +50,23 @@
 	}
 
 	.dark {
-		--background: 202, 31%, 7%; 
+		--background: 222.2, 49.2%, 11.1%; 
 		--foreground: 210 40% 98%;
 
 		/* CLASSES ADDED BY US: */
-		--container: 202, 31%, 7%;
+		--container: 222.2, 49.2%, 11.1%;
 
-		--gray-primary: 202, 23%, 16%;
-		--gray-secondary: 202, 22%, 17%;
+		--blue-primary: 226, 100%, 5.8%;
+		--blue-secondary: 226, 25.6%, 8.7%;
 
 		--left-panel: 203, 32%, 10%;
-		--chat-hover: 202, 23%, 16%;
+		--chat-hover: 226, 100%, 5.8%;
 
 		--violet-primary: 258.3 89.5% 66.3%;
 		--violet-secondary: 263.4 70% 50.4%;
 		--violet-chat: 263.4 70% 50.4%;
 
-		--gray-tertiary: 203, 22%, 21%;
+		--blue-tertiary: 226, 25.6%, 17%;
 		/* CLASSES ADDED BY US */
 
 		--card: 222.2 84% 4.9%;
@@ -111,7 +111,7 @@
 		width: 8px;
 	}
 	::-webkit-scrollbar-thumb {
-		background-color: hsl(var(--gray-primary));
+		background-color: hsl(var(--blue-primary));
 		border-radius: 4px;
 	}
 	::-webkit-scrollbar-track {

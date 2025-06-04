@@ -17,12 +17,12 @@ const RightPanel = () => {
 		<div className='w-3/4 flex flex-col'>
 			<div className='w-full sticky top-0 z-50'>
 				{/* Header */}
-				<div className='flex justify-between bg-gray-primary p-3'>
+				<div className='flex justify-between bg-blue-primary p-3'>
 					<div className='flex gap-3 items-center'>
 						<Avatar>
 							<AvatarImage src={"/placeholder.png"} className='object-cover' />
 							<AvatarFallback>
-								<div className='animate-pulse bg-gray-tertiary w-full h-full rounded-full' />
+								<div className='animate-pulse bg-blue-tertiary w-full h-full rounded-full' />
 							</AvatarFallback>
 						</Avatar>
 						<div className='flex flex-col'>
