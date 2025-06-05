@@ -1,24 +1,28 @@
 import { ListFilter, LogOut, MessageSquareDiff, Search, User } from "lucide-react";
 import { Input } from "../ui/input";
-// import ThemeSwitch from "@/components/home/theme-switch";
+import ThemeSwitch from "@/components/home/theme-switch";
 
 import Conversation from "./conversation";
 import { conversations } from "@/dummy-data/db";
 import { UserButton } from "@clerk/nextjs";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Video } from "lucide-react";
+import { X } from "lucide-react";
+// import { GroupMembersDialog } from "@/components/home/group-members-dialog";
 
 const LeftPanel = () => {
 	
 
 	return (
-		<div className='w-1/4 border-blue-600 border-r'>
+		<div className='w-1/4 border-blue-600 border-r bg-left-panel'>
 			<div className='sticky top-0 bg-left-panel z-10'>
 				{/* Header */}
-				<div className='flex justify-between bg-blue-primary p-3 items-center'>
+				<div className='flex justify-between p-3 items-center bg-header-bg text-header-fg border-b border-border'>
 					<UserButton />
 
 					<div className='flex items-center gap-3'>
 						<MessageSquareDiff size={20} /> {/* TODO: This line will be replaced with <UserListDialog /> */}
-						{/* <ThemeSwitch /> */}
+						<ThemeSwitch /> 
 					</div>
 				</div>
 				<div className='p-3 flex items-center'>
@@ -31,7 +35,7 @@ const LeftPanel = () => {
 						<Input
 							type='text'
 							placeholder='Search or start a new chat'
-							className='pl-10 py-2 text-sm w-full rounded shadow-sm bg-blue-primary focus-visible:ring-transparent'
+							className='pl-10 py-2 text-sm w-full rounded shadow-sm bg-header-bg text-header-fg focus-visible:ring-transparent'
 						/>
 					</div>
 					<ListFilter className='cursor-pointer' />
